@@ -18,31 +18,36 @@
     <title>Formulaire Js</title>
   </head>
   <body>
-    <form method="post" action="index.js">
+    <form id="code">
       <fieldset>
         <div class="container">
           <div class="row">
             <legend>Ville</legend>
           </div>
         </div>
-
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <label for="code postal">Entrez un code postal</label>
-              <input type="text" name="code postal" placeholder="ex: 63000" />
-              <!-- <input type="submit" value="Validez" /> -->
-              <input type="button" value="Validez" id="clikcode" />
-
-              <label for="ville">Veuillez sélectionner votre ville</label>
+            <div class="col-12 md-6">
+              <label for="monCode">Entrez votre code postal</label>
               <input
-                type="number"
-                name="ville"
-                placeholder="Clermont-Ferrand 63000"
+                id="cp"
+                type="text"
+                name="codePostal"
+                placeholder="DDDDD"
+                pattern="(?:0[1-9]|[1-8]\d|9[0-8])\d{3}"
                 required
               />
+              <input type="submit" value="Validez" id="clikcode" />
+
+              <label for="maVille">Sélectionnez votre ville</label>
+              <input
+                type="text"
+                name="nom"
+                placeholder="Clermont-Ferrand 63000"
+                id="v"
+              />
               <!-- <input type="submit" value="Validez" /> -->
-              <input type="button" value="Validez" id="clikville" />
+              <input type="submit" value="Validez" id="clikville" />
             </div>
           </div>
         </div>
