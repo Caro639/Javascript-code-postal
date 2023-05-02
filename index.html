@@ -38,16 +38,24 @@
                 required
               />
               <input type="submit" value="Validez" id="clikcode" />
+            </div>
 
-              <label for="maVille">Sélectionnez votre ville</label>
-              <input
-                type="text"
-                name="nom"
-                placeholder="Clermont-Ferrand 63000"
-                id="v"
+            <div class="col col-12 col-md-6"> 
+              <label for="n" class="form-label">Sélectionnez votre ville</label>
+              
+              <input class="form-control" list="ns" name="n"
+              id="n"
               />
-              <!-- <input type="submit" value="Validez" /> -->
-              <input type="submit" value="Validez" id="clikville" />
+             <datalist id="ns">
+               <option value=>ville</option>
+               <option value=>ville</option>
+               <option value=></option>
+               <option value=></option>
+               <option value=></option>
+               <option value=></option>
+              </datalist>
+              
+              <input type="submit" value="Sélectionnez" id="clikville" />
             </div>
           </div>
         </div>
@@ -56,3 +64,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+
